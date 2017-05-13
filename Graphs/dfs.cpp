@@ -31,14 +31,8 @@ int main()
 	cin >> n >> e;
 	for(i=0;i<e;i++) {
 		cin >> x >> y;
-		if(x<=n && y<=n){
 		v[x].push_back(y);
 		v[y].push_back(x);
-		}
-		else{
-			cout << "Error\n";
-			break;
-		}
 	}
 	s.push(1);
 	visited[1]=true;
